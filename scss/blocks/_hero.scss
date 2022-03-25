@@ -1,0 +1,136 @@
+.hero__wrapper {
+  max-width: 1015px;
+  display: flex;
+  padding: 72px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__heading {
+  max-width: 546px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  color: #36536B;
+  margin: 0;
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgb(108, 130, 148);
+  // margin: 0;
+  margin-left: 25px;
+}
+
+.hero__text-spn {
+  font-weight: 700;
+  color: rgb(156, 172, 185);
+}
+
+.hero__img {
+  width: 263px;
+  height: 500px;
+  display: block;
+  border-radius: 34px;
+}
+
+
+@include breakpoint-down(950px) {
+  .hero__heading {
+    max-width: 546px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    color: #36536B;
+    margin: 0;
+  }
+}
+
+
+@include breakpoint-down(915px) {
+  .hero__heading {
+    max-width: 466px;
+    font-size: 55px;
+  }
+}
+
+@include breakpoint-down(811px) {
+  .hero__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .hero__img {
+    width: 155px;
+    height: 299px;
+    border-radius: 20px;
+  }
+}
+
+@include breakpoint-down(811px) {
+  .hero__heading {
+    max-width: 573px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+    margin-top: 20px;
+  }
+
+
+  .hero__wrapper {
+    padding-top: 48px;
+  }
+
+  .hero__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@include breakpoint-down(555px) {
+  .hero__heading {
+    max-width: 478px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+    margin-top: 20px;
+  }
+
+}
+
+@include breakpoint-down(449px) {
+  .hero__heading {
+    max-width: 290px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.246154px;
+    color: #36536B;
+  }
+  .hero__text {
+    margin-top: 70px;
+  }
+  .hero__img {
+    width: 125px;
+    height: 240px;
+  }
+}

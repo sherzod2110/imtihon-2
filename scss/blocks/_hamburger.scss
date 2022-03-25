@@ -1,0 +1,18 @@
+.hamburger-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.hamburger-btn__img {
+  width: 28px;
+  height: 17px;
+  display: none;
+}
+
+
+@include breakpoint-down(551px) {
+  .hamburger-btn__img {
+    display: block;
+  }
+  
+} 

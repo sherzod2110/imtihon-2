@@ -1,0 +1,100 @@
+.navbar {
+  display: block;
+}
+
+.navbar__list {
+  min-width: 234px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.navbar__link:hover {
+  color: rgb(54, 41, 41);
+}
+
+.navbar__link:active {
+  color: rgb(0, 0, 0);
+}
+
+.footer-link {
+  color: #B8BCC0;
+}
+
+.footer-link:hover {
+  color: rgb(184, 188, 192);
+}
+
+
+.footer-link:active {
+  color: #fff;
+}
+
+.nav-item {
+  margin-top: 20px;
+}
+
+.navbarr {
+  min-width: 219px;
+}
+
+
+@include breakpoint-down(665px) {
+  .navbar__list {
+    min-width: 200px;
+  }
+}
+
+@include breakpoint-down(685px) {
+
+  .navbarr {
+    max-width: 219px;
+  }
+}
+
+@include breakpoint-down(590px) {
+  .navbar__list {
+    max-width: 190px;
+  }
+
+
+
+}
+
+@include breakpoint-down(550px) {
+  
+  .navbarr {
+    display: block;
+    // flex-direction: column;
+    // max-width: 70px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // display: flex;
+    // text-align: center;
+  }
+}
+
+
+  @include breakpoint-down(550px) {
+    .navbarr {
+      display: block;
+    }
+
+    .nav {
+      display: block;
+    }
+
+  }

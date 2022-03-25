@@ -1,0 +1,136 @@
+.simple {
+  background-image: url("../../img/bck-img.png");
+  background-repeat: no-repeat;
+  background-position-x: calc(50% + 650px);
+  background-position-y: calc(50%);
+  background-size: 780px 780px;
+}
+
+.simple__wrapper {
+  max-width: 1015px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.simple__inner {
+  // max-width: 445px;
+}
+
+.simple__heading {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #36536B;
+  margin: 0;
+}
+
+.simple__text {
+  max-width: 445px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C8294;
+}
+
+.simple__iphone {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.simple__img {
+  width: 250px;
+  height: 490px;
+  display: block;
+  border-radius: 34px;
+}
+
+
+@include breakpoint-down(1048px) {
+  .simple__wrapper {
+    flex-direction: column-reverse;
+  }
+  
+  .simple {
+    background-image: none;
+  }
+  
+
+  .simple__inner {
+    text-align: center;
+  }
+  
+  .simple__text {
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .simple__iphone {
+    width: 600px;
+  }
+
+  .simple__inner {
+    margin-top: 60px;
+  }
+
+  .simple__wrapper {
+    padding-bottom: 80px;
+  }
+}
+
+@include breakpoint-down(795px) {
+  .simple__wrapper {
+    padding-top: 50px;
+  }
+}
+
+@include breakpoint-down(754px) {
+
+  .simple__iphone {
+    width: 540px;
+  }
+
+  .simple__wrapper {
+    padding-bottom: 80px;
+  }
+}
+
+@include breakpoint-down(643px) {
+  
+  .simple__iphone {
+    width: 374px;
+  }
+
+  .simple__img {
+    width: 168px;
+    height: 300px;
+    border-radius: 20px;
+  }
+}
+
+
+@include breakpoint-down(430px) {
+
+  .simple__heading {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .simple__img {
+    width: 135px;
+    height: 256px;
+  }
+  .simple__iphone {
+    width: 290px;
+  }
+
+  .simple__inner {
+    margin-top: 38px;
+  }
+
+}

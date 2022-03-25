@@ -1,0 +1,36 @@
+.header__wrapper {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__inner {
+  width: 431px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@include breakpoint-down(665px) {
+  .header__inner {
+    width: 400px;
+  }
+}
+
+@include breakpoint-down(625px) {
+  .header__inner {
+    width: 380px;
+  }
+}
+
+@include breakpoint-down(590px) {
+  .header__inner {
+    width: 357px;
+  }
+}
+
+@include breakpoint-down(551px) {
+  .header__inner {
+    width: 200px;
+  }
+}

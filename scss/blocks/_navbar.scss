@@ -48,13 +48,23 @@
 }
 
 .navbarr {
-  min-width: 219px;
+  max-width: 219px;
 }
 
+.navbarr {
+  width: 200px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
 
 @include breakpoint-down(665px) {
   .navbar__list {
-    min-width: 200px;
+    max-width: 200px;
   }
 }
 
@@ -78,12 +88,12 @@
   
   .navbarr {
     display: block;
-    // flex-direction: column;
-    // max-width: 70px;
-    // margin-left: auto;
-    // margin-right: auto;
-    // display: flex;
-    // text-align: center;
+    flex-direction: column;
+    max-width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
   }
 }
 
@@ -97,4 +107,8 @@
       display: block;
     }
 
+  }
+
+  .nav {
+    display: block;
   }

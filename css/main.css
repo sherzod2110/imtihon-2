@@ -543,12 +543,27 @@ body {
 }
 
 .navbarr {
-  min-width: 219px;
+  max-width: 219px;
+}
+
+.navbarr {
+  width: 200px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media only screen and (max-width: 665px) {
   .navbar__list {
-    min-width: 200px;
+    max-width: 200px;
   }
 }
 
@@ -567,6 +582,17 @@ body {
 @media only screen and (max-width: 550px) {
   .navbarr {
     display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
   }
 }
 
@@ -577,6 +603,10 @@ body {
   .nav {
     display: block;
   }
+}
+
+.nav {
+  display: block;
 }
 
 .button {

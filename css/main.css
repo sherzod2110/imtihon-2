@@ -431,6 +431,15 @@ img {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 590px) {
+  .header__inner {
+    width: 357px;
+  }
+  .navbar__list {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 665px) {
   .header__inner {
     width: 400px;
@@ -439,13 +448,7 @@ img {
 
 @media only screen and (max-width: 625px) {
   .header__inner {
-    width: 380px;
-  }
-}
-
-@media only screen and (max-width: 590px) {
-  .header__inner {
-    width: 357px;
+    width: 395px;
   }
 }
 
@@ -1579,5 +1582,195 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+.pricing__heading {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.430769px;
+  color: #36536B;
+}
+
+.pricing__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.pricing__item {
+  position: relative;
+}
+
+.pricing__item::before {
+  position: absolute;
+  width: 100%;
+  content: "";
+  margin-top: 415px;
+  border-bottom: 2px solid #cfcece;
+}
+
+.pricing__heading-2 {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.246154px;
+  color: #BA4270;
+  margin: 0;
+}
+
+.pricing-text {
+  max-width: 350px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C8294;
+  margin: 0;
+}
+
+.pricing__spn {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -0.430769px;
+  color: #36536B;
+  border-bottom: 2px solid #cfcece;
+  max-width: 350px;
+  display: block;
+}
+
+.pricing__span-2 {
+  position: relative;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #36536B;
+  padding-top: 5px;
+  padding-left: 30px;
+}
+
+.img::before {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 14px;
+  height: 18px;
+  display: block;
+  background-image: url("../../img/galchka.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.color {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #afb5b9;
+}
+
+.pricing__btn {
+  margin-top: 30px;
+  border: 1px solid #36536B;
+  border-radius: 24px;
+  background-color: transparent;
+  padding: 15px 28px;
+  color: #36536B;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.pricing__btn:hover {
+  background: #36536B;
+  color: aliceblue;
+}
+
+.pricing__btn:active {
+  background: #253341;
+  color: aliceblue;
+}
+
+.form-2 {
+  padding: 60px 0 60px 0;
+}
+
+@media only screen and (max-width: 676px) {
+  .pricing__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pricing__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pricing-text {
+    max-width: 100%;
+  }
+  .pricing__heading {
+    text-align: center;
+  }
+  .pricing__spn {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 843px) {
+  .pricing__item::before {
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 676px) {
+  .pricing__heading-2 {
+    text-align: center;
+  }
+  .pricing-text {
+    text-align: center;
+  }
+  .pricing__spn {
+    text-align: center;
+  }
+  .pricing__item::before {
+    width: 50px;
+  }
+  .pricing__span-2 {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pricing__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pricing__spn {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

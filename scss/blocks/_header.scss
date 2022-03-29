@@ -11,6 +11,15 @@
   justify-content: space-between;
 }
 
+@include breakpoint-down(590px) {
+  .header__inner {
+    width: 357px;
+  }
+  .navbar__list {
+    display: none;
+  }
+}
+
 @include breakpoint-down(665px) {
   .header__inner {
     width: 400px;
@@ -19,18 +28,15 @@
 
 @include breakpoint-down(625px) {
   .header__inner {
-    width: 380px;
+    width: 395px;
   }
 }
 
-@include breakpoint-down(590px) {
-  .header__inner {
-    width: 357px;
-  }
-}
 
 @include breakpoint-down(551px) {
   .header__inner {
     width: 200px;
   }
+
+ 
 }

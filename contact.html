@@ -25,7 +25,7 @@
             <nav class="navbar">
               <ul class="navbar__list">
                 <li class="navbar__item">
-                  <a class="navbar__link" href="#">
+                  <a class="navbar__link" href="pricing.html">
                     Pricing
                   </a>
                 </li>
@@ -35,7 +35,7 @@
                   </a>
                 </li>
                 <li class="navbar__item">
-                  <a class="navbar__link" href="contact.html">
+                  <a class="navbar__link" href="">
                     Contact
                   </a>
                 </li>
@@ -45,7 +45,7 @@
           <button class="hamburger-btn" type="button">
             <img class="hamburger-btn__img" src="./img/hamburger.svg" alt="Hamburger" width="28" height="17">
           </button>
-          <button class="button" type="button">Schedule a Demo</button>
+          <button class="button btn" type="button">Schedule a Demo</button>
         </div>
   
       </div>
@@ -55,59 +55,79 @@
 
   <!-- ============================== MAIN =============================== -->
   <main>
-    <section class="pricing">
-      <div class="pricing__container container">
-        <div class="pricing__wrapper">
 
-          <h2 class="pricing__heading">Pricing</h2>
+    <section class="contact">
+      <div class="contact__container container">
+        <div class="contact__inner">
+          <h2 class="contact__heading">Submit a help request and 
+            we’ll get in touch shortly.</h2>
 
-          <ul class="pricing__list">
-            <li class="pricing__item">
-              <h3 class="pricing__heading-2">Free Plan</h3>
-              <p class="pricing-text">Build and test using our core set of products with up to 100 API requests</p>
-              <span class="pricing__spn">$0.00</span>
-              <span class="pricing__span-2 img">Transactions</span>
-              <span class="pricing__span-2 img">Auth</span>
-              <span class="pricing__span-2 img">Identity</span>
-              <span class="pricing__span-2 color">Investments</span>
-              <span class="pricing__span-2 color">Assets</span>
-              <span class="pricing__span-2 color">Liabilities</span>
-              <span class="pricing__span-2 color">Income</span>
-              <button class="pricing__btn">Request Access</button>
-            </li>
+            <div class="contact__form">
+              <form action="https://echo.htmlacademy.ru">
+                <input class="contact__input" type="text" name="ism" placeholder="Name" required>
+                <input class="contact__input" type="email" name="Email Address" placeholder="Email Address">
+                <input class="contact__input" type="text" name="Company Name" placeholder="Company Name">
+                <input class="contact__input" type="text" name="Title" placeholder="Title">
+                <input class="contact__input area" type="text" name="Message" placeholder="Message">
+                <div class="contact__box">
+                  <input class="contact__check" type="checkbox" id="check" required>
+                  <p class="contact__text">Stay up-to-date with company announcements and updates to our API</p>
+                </div>
+                <button class="contact__btn" type="submit">submit</button>
+              </form>
 
-            <li class="pricing__item">
-              <h3 class="pricing__heading-2">Basic Plan</h3>
-              <p class="pricing-text">Build and test using our core set of products with up to 100 API requests</p>
-              <span class="pricing__spn">$249.00</span>
-              <span class="pricing__span-2 img">Transactions</span>
-              <span class="pricing__span-2 img">Auth</span>
-              <span class="pricing__span-2 img">Identity</span>
-              <span class="pricing__span-2 img">Investments</span>
-              <span class="pricing__span-2 img">Assets</span>
-              <span class="pricing__span-2 color">Liabilities</span>
-              <span class="pricing__span-2 color">Income</span>
-              <button class="pricing__btn">Request Access</button>
-            </li>
+              <div>
+                <p class="contact__text-2">Join the thousands of innovators that are already building with us</p>
 
-            <li class="pricing__item">
-              <h3 class="pricing__heading-2">Premium Plan</h3>
-              <p class="pricing-text">Build and test using our core set of products with up to 100 API requests</p>
-                <span class="pricing__spn">$499.00</span>
-                <span class="pricing__span-2 img">Transactions</span>
-                <span class="pricing__span-2 img">Auth</span>
-                <span class="pricing__span-2 img">Identity</span>
-                <span class="pricing__span-2 img">Investments</span>
-                <span class="pricing__span-2 img">Assets</span>
-                <span class="pricing__span-2 img">Liabilities</span>
-                <span class="pricing__span-2 img">Income</span>
-              <button class="pricing__btn">Request Access</button>
-            </li>
-          </ul>
+                <ul class="contact__list">
+                  <li class="contact__item">
+                    <a class="about__link" href="https://www.tesla.com/" target="_blank">
+                      <img class="about__img" src="./img/Combined Shape (3).svg" alt="Tesla" width="129" height="17">
+                    </a>
+                  </li>
+      
+                  <li class="contact__item">
+                    <a class="about__link" href="https://www.microsoft.com/en-us/" target="_blank">
+                      <img class="about__img" src="img/Combined Shape (4).svg" alt="Microsoft" width="145" height="31">
+                    </a>
+                  </li>
+      
+                  <li class="contact__item">
+                    <a class="about__link" href="https://ru.wikipedia.org/wiki/Hewlett-Packard" target="_blank">
+                      <img class="about__img" src="img/Combined Shape (5).svg" alt="Hewlett"  width="140" height="27">
+                    </a>
+                  </li>
+      
+                  <li class="contact__item">
+                    <a class="about__link" href="https://www.oracle.com/ru/index.html" target="_blank">
+                      <img class="about__img" src="./img/Shape (3).svg" alt="Oracle" width="131" height="17">
+                    </a>
+                  </li>
+      
+                  <li class="contact__item">
+                    <a class="about__link" href="https://www.google.ru/" target="_blank">
+                      <img class="about__img about__res" src="./img/Combined Shape (6).svg" alt="Google" width="96" height="33">
+                    </a>
+                  </li>
+      
+                  <li class="contact__item">
+                    <a class="about__link" href="https://www.nvidia.ru/Download/index.aspx?lang=ru" target="_blank">
+                      <img class="about__img" src="./img/Combined Shape (7).svg" alt="Nvidia" width="137" height="26">
+                    </a>
+                  </li>
+                </ul>
+
+
+              </div>
+
+            </div>
+
 
         </div>
       </div>
     </section>
+
+
 
     <section class="ready form-2">
       <div class="ready__container container">
@@ -143,12 +163,12 @@
           <nav class="nav">
             <ul class="navbarr">
               <li class="navbar__item nav-item">
-                <a class="navbar__link footer-link" href="#">
+                <a class="navbar__link footer-link" href="pricing.html">
                   Pricing
                 </a>
               </li>
               <li class="navbar__item nav-item">
-                <a class="navbar__link footer-link" href="#">
+                <a class="navbar__link footer-link" href="about.html">
                   About
                 </a>
               </li>

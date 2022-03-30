@@ -2127,10 +2127,54 @@ body {
   margin: 20px 0 20px 0;
 }
 
-.contact__check {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
+.checkbox-wrapper {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 26px;
+  margin-left: 15px;
+}
+
+.checkmark {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 2px;
+  position: relative;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 20px;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-59%, -50%) rotateZ(40deg) scale(10);
+          transform: translate(-59%, -50%) rotateZ(40deg) scale(10);
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#check:checked ~ .checkmark {
+  background-color: #ba4270;
+}
+
+#check:checked ~ .checkmark::after {
+  opacity: 1;
+  -webkit-transform: translate(-59%, -50%) rotateZ(40deg) scale(1);
+          transform: translate(-59%, -50%) rotateZ(40deg) scale(1);
 }
 
 .contact__list {

@@ -70,7 +70,11 @@
                 <input class="contact__input" type="text" name="Title" placeholder="Title">
                 <input class="contact__input area" type="text" name="Message" placeholder="Message">
                 <div class="contact__box">
-                  <input class="contact__check" type="checkbox" id="check" required>
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" id="check" hidden/>
+                    <label class="checkmark" for="check"></label>
+                  </div>
+
                   <p class="contact__text">Stay up-to-date with company announcements and updates to our API</p>
                 </div>
                 <button class="contact__btn" type="submit">submit</button>

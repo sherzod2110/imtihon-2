@@ -1585,6 +1585,14 @@ body {
   }
 }
 
+.body-pricing {
+  background-color: #EDF3F8;
+  background-image: url("../../img/bck-img.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 518px) -577px;
+  background-size: 780px 780px;
+}
+
 .pricing__heading {
   font-family: 'DM Serif Display';
   font-style: normal;
@@ -1772,5 +1780,217 @@ body {
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.page__wrapper {
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.page__heading {
+  max-width: 658px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.430769px;
+  color: #36536B;
+  margin: 0;
+}
+
+.page__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.page__heading-our {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.246154px;
+  color: #36536B;
+  margin: 0;
+}
+
+.page__text {
+  max-width: 635px;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C8294;
+  margin: 0;
+}
+
+.team {
+  padding: 50px 0 50px 0;
+}
+
+.team__wrapper {
+  max-width: 1100px;
+}
+
+.team__text {
+  position: relative;
+  font-size: 16px;
+  line-height: 28px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.team__spn {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -0.430769px;
+  color: #BA4270;
+}
+
+.team__spn::before {
+  position: absolute;
+  top: 110px;
+  width: 350px;
+  display: block;
+  border-bottom: 2px solid #36536B;
+  opacity: 0.25;
+  content: "";
+}
+
+.team__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team__item {
+  width: 350px;
+  position: relative;
+}
+
+.team__item::before {
+  position: absolute;
+  top: -15px;
+  width: 350px;
+  border-top: 2px solid #36536B;
+  opacity: 0.25;
+  content: "";
+}
+
+.team__inner {
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 1117px) {
+  .team__item::before {
+    width: 260px;
+  }
+  .team__spn::before {
+    width: 260px;
+  }
+}
+
+@media only screen and (max-width: 867px) {
+  .page__heading {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team__item::before {
+    width: 200px;
+  }
+  .team__spn::before {
+    width: 200px;
+  }
+  .page__inner {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page__text {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .team__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 2px solid #d4d1d1;
+    border-bottom: 2px solid #d4d1d1;
+  }
+  .team__item::before {
+    border: none;
+  }
+  .team__spn::before {
+    border: none;
+  }
+  .team__item {
+    max-width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 632px) {
+  .page__heading {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 441px) {
+  .page__heading {
+    font-size: 32px;
+  }
+}
+
+.photo {
+  width: 100%;
+  height: 500px;
+  background-image: url("../../img/Bitma.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page__img {
+  display: none;
+}
+
+@media only screen and (max-width: 956px) {
+  .photo {
+    height: auto;
+    background-image: none;
+  }
+  .page__img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }

@@ -1,0 +1,146 @@
+.team {
+  padding: 50px 0 50px 0;
+}
+
+.team__wrapper {
+  max-width: 1100px;
+}
+
+.team__text {
+  position: relative;
+  font-size: 16px;
+  line-height: 28px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  margin: 0;
+}
+
+
+// .team__text::before {
+//   position: absolute;
+//   border-top: 2px solid black;
+//   content: "";
+//   width: 350px;
+// }
+
+
+.team__spn {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -0.430769px;
+  color: #BA4270;
+}
+
+.team__spn::before {
+  position: absolute;
+  top: 110px;
+  width: 350px;
+  display: block;
+  border-bottom: 2px solid #36536B;
+  opacity: 0.25;
+  content: "";
+}
+
+.team__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item {
+  width: 350px;
+  position: relative;
+
+}
+
+.team__item::before {
+  position: absolute;
+  top: -15px;
+  width: 350px;
+  border-top: 2px solid #36536B;
+  opacity: 0.25;
+  content: "";
+}
+
+.team__inner {
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@include breakpoint-down(1117px) {
+
+  .team__item::before {
+    width: 260px;
+  }
+  .team__spn::before {
+    width: 260px;
+  }
+  
+}
+
+
+
+
+@include breakpoint-down(867px) {
+  .page__heading {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team__item::before {
+    width: 200px;
+  }
+  .team__spn::before {
+    width: 200px;
+  }
+  .page__inner {
+    text-align: center;
+    flex-direction: column;
+  }
+  .page__text {
+    max-width: 100%;
+  }
+}
+
+@include breakpoint-down(668px) {
+  .team__list {
+    flex-direction: column;
+    border-top: 2px solid rgb(212, 209, 209);
+    border-bottom: 2px solid rgb(212, 209, 209);
+  }
+  .team__item::before {
+    border: none;
+  }
+  .team__spn::before {
+    border: none;
+  }
+  .team__item {
+    max-width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+
+@include breakpoint-down(632px) {
+  .page__heading {
+    font-size: 40px;
+  }
+}
+
+@include breakpoint-down(441px) {
+  .page__heading {
+    font-size: 32px;
+  }
+}
+

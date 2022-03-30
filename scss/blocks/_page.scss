@@ -1,0 +1,50 @@
+.page {
+
+}
+
+.page__wrapper {
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.page__heading {
+  max-width: 658px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.430769px;
+  color: #36536B;
+  margin: 0;
+
+}
+
+.page__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.page__heading-our {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.246154px;
+  color: #36536B;  
+  margin: 0;
+}
+
+.page__text {
+  max-width: 635px;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C8294;
+  margin: 0;
+}
+
